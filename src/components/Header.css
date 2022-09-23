@@ -1,0 +1,23 @@
+header .logo {
+  display: flex;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 0.6px;
+}
+
+header .link {
+  display: flex;
+  place-items: center;
+  gap: 3px;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  padding: 6px 16px;
+}
+
+header .link:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 6px;
+}

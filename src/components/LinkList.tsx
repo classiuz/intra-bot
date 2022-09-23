@@ -1,3 +1,4 @@
+import "./LinkList.css"
 import { useState, useEffect } from 'react'
 import linksData from '../data/links.json'
 import { linksInterface } from '../resources/interfaces'
@@ -8,7 +9,7 @@ const LinkList = () => {
   useEffect(() => setLinks(linksData), [])
 
   return (
-    <div>
+    <div className="link-list">
       <div className="row gap title mb-1">
         <FaLink />
         <span>LINKS ÚTILES</span>

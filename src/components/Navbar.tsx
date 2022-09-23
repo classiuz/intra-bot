@@ -1,3 +1,4 @@
+import "./Navbar.css"
 import { useState, useEffect } from 'react'
 import raData from '../data/ra.json'
 import { raInterface } from '../resources/interfaces'
@@ -8,7 +9,7 @@ const Navbar = () => {
   useEffect(() => setRa(raData), [])
 
   return (
-    <>
+    <div className="Navbar">
       <div className="row gap title mb-1">
         <span>LISTA GESTIONES</span>
         <FaTasks />
@@ -18,7 +19,7 @@ const Navbar = () => {
           return <span key={index}>{ra.name}</span>
         })}
       </div>
-    </>
+    </div>
   )
 }
 

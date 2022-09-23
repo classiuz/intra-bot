@@ -1,0 +1,9 @@
+.link-list .links a:hover {
+  color: var(--secondary);
+}
+
+.link-list .links .icon {
+  font-size: 14px;
+  vertical-align: 3px;
+  margin-left: 4px;
+}

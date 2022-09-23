@@ -5,7 +5,7 @@ import Notes from './Notes'
 
 const Body = () => {
   return (
-    <div className="row j-space-b wth-95 gap-3 ms-auto">
+    <main className="row j-space-b wth-95 gap-3 ms-auto">
       <div className="col wth-25">
         <Navbar />
       </div>
@@ -16,7 +16,7 @@ const Body = () => {
         <LinkList />
         <Notes />
       </div>
-    </div>
+    </main>
   )
 }
 
