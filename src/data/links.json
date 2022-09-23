@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Webmail Telecentro",
+    "url": "https://webmail.telecentro.net.ar/"
+  },
+  {
+    "name": "Monitor online RA",
+    "url": "http://10.210.56.51/reporte_ra.php"
+  },
+  {
+    "name": "CRM - Gestor de usuarios",
+    "url": "http://crmext.telecentro.local"
+  },
+  {
+    "name": "I3 - Sistema de usuarios",
+    "url": "https://usuarios.telecentro.net.ar/home.php"
+  },
+  {
+    "name": "Gestiones Operadores",
+    "url": "https://docs.google.com/spreadsheets/d/1pzVefV-9yAnro_TwKNwMwE6BV1bHjs-gL7xQZ9fQezU/edit#gid=0"
+  }
+]
