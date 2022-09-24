@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FaClipboardList, FaEraser, FaCopy } from 'react-icons/fa'
 
 const Notes = () => {
-  const [Notes, setNotes] = useState('')
+  const [notes, setNotes] = useState('')
 
   return (
     <div className="notes">
@@ -13,7 +13,7 @@ const Notes = () => {
       </div>
       <textarea
         placeholder="Escribir una nota..."
-        value={Notes}
+        value={notes}
         onChange={(e) => setNotes(e.target.value)}
       />
       <div className="row j-center a-center gap mt">
@@ -23,7 +23,7 @@ const Notes = () => {
         </button>
         <button
           className="row a-center gap"
-          onClick={() => navigator.clipboard.writeText(Notes)}
+          onClick={() => navigator.clipboard.writeText(notes)}
         >
           <FaCopy />
           <span>Copiar</span>

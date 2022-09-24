@@ -1,47 +1,76 @@
 [
   {
-    "name": "ID121 SIN SOLUCION DE SOPORTE ON LINE"
+    "name": "ID121 - Sin suscripción",
+    "categories": [
+      "Motivos de rechazos",
+      "Bloqueado tecnicamente",
+      "Sin datos en InfoCall (I3)"
+    ]
   },
   {
-    "name": "PROBLEMAS POSTES/COLUMNAS"
+    "name": "Problema Postes/Columnas",
+    "categories": ["Motivos de rechazos", "Generar Ticket red", "categoria 3"]
   },
   {
-    "name": "SERVICE TELECENTRO VSB ALEXA"
+    "name": "Service deco ALEXA",
+    "categories": ["Motivos de rechazos", "Planilla de casos", "categoria 3"]
   },
   {
-    "name": "ERROR SINCRO CONTROL POR VOZ USO TEAMS"
+    "name": "Reposición de CM/DD",
+    "categories": [
+      "Motivos de rechazos",
+      "Speech llamados",
+      "Generar RA nota de crédito",
+      "Adelantamiento VT"
+    ]
   },
   {
-    "name": "TICKET DE RED SUPERA 48HS PLAZO"
+    "name": "Inconveniente CM/DD",
+    "categories": [
+      "Motivos de rechazos",
+      "Seriado no asociado",
+      "Deco no existe en CRM",
+      "Remove Material"
+    ]
   },
   {
-    "name": "PROBLEMAS CABLEADO RED.500"
+    "name": "Error control por voz",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "REPOSICION DE EQUIPOS CM/DD"
+    "name": "TK supera 48HS plazo",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "INCONVENIENTE CON DECO Y CM"
+    "name": "Problema RED.500",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "RESERVADO TEAMS VELOCIDAD"
+    "name": "Problema velocidad",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "CLIENTES REFERIDOS VIP"
+    "name": "Clientes referidos VIP",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "PEDIDO DE SERVICE A CLIENTE"
+    "name": "Clientes referidos",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "INCONVENIENTES CON NAVEGACION WIFI"
+    "name": "Pedido de service a cliente",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "BAJADAS COLECTIVAS"
+    "name": "Inconvenientes WIFI",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "CLIENTES REFERIDOS"
+    "name": "Bajadas colectivas",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   },
   {
-    "name": "POPUP CRM NO PERMITE AGENDAR VT"
+    "name": "CRM no permite agendar VT",
+    "categories": ["categoria 1", "categoria 2", "categoria 3"]
   }
 ]

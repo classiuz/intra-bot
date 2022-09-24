@@ -5,4 +5,5 @@ export interface linksInterface {
 
 export interface raInterface {
     name: string
+    categories: string[]
 }

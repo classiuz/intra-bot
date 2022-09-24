@@ -1,0 +1,31 @@
+.navbar {
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  max-height: calc(100vh - 72px);
+  overflow-y: scroll;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar ul li {
+  font-size: 18px;
+  border-left: 1px solid #c1c1c142;
+  margin: 6px 0 0 16px;
+  padding-left: 16px;
+}
+
+.navbar ul li:hover {
+  border-left: 1px solid var(--secondary);
+}
+
+.navbar ul a {
+  color: #c1c1c1eb;
+}
+
+.navbar ul a:hover {
+  color: var(--secondary);
+}

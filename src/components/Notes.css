@@ -1,7 +1,9 @@
 .notes textarea {
-  background-color: #1a1a1a;
+  box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.08);
+  background-color: var(--soft-dark);
   border-radius: 14px;
-  box-sizing: border-box;
   font-family: inherit;
   padding: 1rem;
   font-size: 16px;
@@ -13,6 +15,7 @@
 
 .notes textarea::placeholder {
   font-style: italic;
+  color: #999;
 }
 
 .notes button {

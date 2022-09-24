@@ -10,7 +10,7 @@ const LinkList = () => {
 
   return (
     <div className="link-list">
-      <div className="row gap title mb-1">
+      <div className="row gap title mb-1 mt-4">
         <FaLink />
         <span>LINKS ÚTILES</span>
       </div>

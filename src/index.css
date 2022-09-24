@@ -7,14 +7,18 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #ffffffde;
-  background-color: #0e0e0e;
+  color: var(--white);
+  background-color: var(--dark);
 
+  --white: #ffffffde;
+  --dark: #0e0e0e;
+  --soft-dark: #1e1e1e;
   --primary: #01427e;
   --secondary: #0171da;
 }
 
-*:focus {
+* {
+  box-sizing: border-box;
   outline: none;
 }
 
@@ -26,17 +30,22 @@ body {
 
 #root {
   margin: 0 auto;
-  padding: 2rem;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   min-width: 100%;
 }
 
 a {
   text-decoration: none;
   color: #ffffffde;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: start;
 }
 
 .title {
