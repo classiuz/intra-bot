@@ -14,18 +14,19 @@
 .navbar ul li {
   font-size: 18px;
   border-left: 1px solid #c1c1c142;
-  margin: 6px 0 0 16px;
-  padding-left: 16px;
-}
-
-.navbar ul li:hover {
-  border-left: 1px solid var(--secondary);
+  margin-left: 16px;
+  padding: 4px 0;
 }
 
 .navbar ul a {
-  color: #c1c1c1eb;
+  border-left: 1px solid transparent;
+  padding-left: 16px;
+  margin-left: -1px;
+  color: var(--soft-white);
 }
 
-.navbar ul a:hover {
+.navbar ul a:hover,
+.navbar ul a.active {
+  border-color: var(--secondary);
   color: var(--secondary);
 }

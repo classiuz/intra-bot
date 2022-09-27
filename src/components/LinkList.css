@@ -1,3 +1,7 @@
+.link-list .links a {
+  color: var(--soft-white);
+}
+
 .link-list .links a:hover {
   color: var(--secondary);
 }

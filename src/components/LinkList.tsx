@@ -1,11 +1,12 @@
-import "./LinkList.css"
+import './LinkList.css'
 import { useState, useEffect } from 'react'
 import linksData from '../data/links.json'
-import { linksInterface } from '../resources/interfaces'
+import { Links } from '../resources/interfaces'
 import { FaLink, FaExternalLinkAlt } from 'react-icons/fa'
 
 const LinkList = () => {
-  const [links, setLinks] = useState<linksInterface[]>([])
+  const [links, setLinks] = useState<Links[]>([])
+  const [status, setStatus] = useState(-1)
   useEffect(() => setLinks(linksData), [])
 
   return (
@@ -18,22 +19,16 @@ const LinkList = () => {
         {links.map((link, index) => {
           return (
             <a
+              key={index}
               href={link.url}
               target="_blank"
-              key={index}
-              onMouseEnter={(e) =>
-                (e.target as HTMLElement)
-                  .querySelector('span')
-                  ?.classList.remove('hidden')
-              }
-              onMouseLeave={(e) =>
-                (e.target as HTMLElement)
-                  .querySelector('span')
-                  ?.classList.add('hidden')
-              }
+              onMouseEnter={() => setStatus(index)}
+              onMouseLeave={() => setStatus(-1)}
             >
               {link.name}
-              <span className="icon hidden">
+              <span
+                className={`icon ${status == index ? 'visible' : 'hidden'}`}
+              >
                 <FaExternalLinkAlt />
               </span>
             </a>

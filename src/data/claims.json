@@ -1,0 +1,280 @@
+[
+  {
+    "id": 0,
+    "name": "ID121 Sin suscripción",
+    "categories": [
+      {
+        "name": "Motivos de rechazos",
+        "content": "Contenido"
+      },
+      {
+        "name": "Bloqueado tecnicamente",
+        "content": "Contenido"
+      },
+      {
+        "name": "Sin datos en InfoCall (I3)",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Problema Postes/Columnas",
+    "categories": [
+      {
+        "name": "Motivos de rechazos",
+        "content": "Contenido"
+      },
+      {
+        "name": "Generar Ticket red",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Service deco ALEXA",
+    "categories": [
+      {
+        "name": "Motivos de rechazos",
+        "content": "Contenido"
+      },
+      {
+        "name": "Planilla de casos",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Reposición de CM/DD",
+    "categories": [
+      {
+        "name": "Motivos de rechazos",
+        "content": "Contenido"
+      },
+      {
+        "name": "Speech llamados",
+        "content": "Contenido"
+      },
+      {
+        "name": "Generar RA nota de crédito",
+        "content": "Contenido"
+      },
+      {
+        "name": "Adelantamiento VT",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Inconveniente CM/DD",
+    "categories": [
+      {
+        "name": "Motivos de rechazos",
+        "content": "Contenido"
+      },
+      {
+        "name": "Seriado no asociado",
+        "content": "Contenido"
+      },
+      {
+        "name": "Deco no existe en CRM",
+        "content": "Contenido"
+      },
+      {
+        "name": "Remove Material",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Error control por voz",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "TK supera 48HS plazo",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Problema RED.500",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Problema velocidad",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Clientes referidos VIP",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Clientes referidos",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Pedido de service a cliente",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Inconvenientes WIFI",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Bajadas colectivas",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "CRM no permite agendar VT",
+    "categories": [
+      {
+        "name": "categoria 1",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 2",
+        "content": "Contenido"
+      },
+      {
+        "name": "categoria 3",
+        "content": "Contenido"
+      }
+    ]
+  }
+]

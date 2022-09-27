@@ -3,7 +3,6 @@
   -webkit-box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.08);
   background-color: var(--soft-dark);
-  border-radius: 14px;
   font-family: inherit;
   padding: 1rem;
   font-size: 16px;
@@ -11,11 +10,12 @@
   height: 30em;
   border: none;
   resize: none;
+  cursor: auto;
 }
 
 .notes textarea::placeholder {
   font-style: italic;
-  color: #999;
+  color: var(--soft-white);
 }
 
 .notes button {

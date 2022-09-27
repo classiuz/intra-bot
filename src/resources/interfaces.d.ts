@@ -1,9 +1,19 @@
-export interface linksInterface {
+export interface Links {
     name: string
     url: string
 }
 
-export interface raInterface {
+export interface Claims {
+    id: number
     name: string
-    categories: string[]
+    categories: {
+        name: string
+        content: string
+    }[]
+}
+
+export interface Props {
+    claims: Claims[]
+    status?: number
+    index?: number
 }
