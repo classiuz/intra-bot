@@ -30,3 +30,9 @@
   border-color: var(--secondary);
   color: var(--secondary);
 }
+
+.navbar ul a svg {
+  font-size: 18px;
+  margin-right: 4px;
+  vertical-align: -2px;
+}

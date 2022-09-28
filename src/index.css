@@ -62,6 +62,7 @@ button {
   font-family: inherit;
   font-size: inherit;
   text-align: start;
+  cursor: pointer;
 }
 
 .title {

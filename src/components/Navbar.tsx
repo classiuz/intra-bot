@@ -1,10 +1,11 @@
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { FaTasks } from 'react-icons/fa'
 import { Props } from '../resources/interfaces'
 import regExp from '../resources/regExp'
+import { MdLibraryAdd, MdLibraryBooks } from 'react-icons/md'
 
-const Navbar = ({ claims, status }: Props) => {
+const Navbar = ({ claims }: Props) => {
   return (
     <div className="navbar">
       <div className="row gap title mb-1 mt-4">
@@ -21,15 +22,19 @@ const Navbar = ({ claims, status }: Props) => {
                   const path = `${regExp(claim.name)}/${regExp(categorie.name)}`
                   return (
                     <li key={index}>
-                      <Link
-                        className={status === index ? 'active' : ''} // EDIT STATUS - INCOMPLETED
-                        to={path}
-                      >
+                      <NavLink to={path}>
+                        <MdLibraryBooks />
                         {categorie.name}
-                      </Link>
+                      </NavLink>
                     </li>
                   )
                 })}
+                <li>
+                  <NavLink to={`${regExp(claim.name)}/añadir-categoria`}>
+                    {<MdLibraryAdd />}
+                    <span>Añadir categoria</span>
+                  </NavLink>
+                </li>
               </ul>
             </div>
           )

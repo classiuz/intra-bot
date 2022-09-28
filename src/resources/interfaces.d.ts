@@ -14,6 +14,5 @@ export interface Claims {
 
 export interface Props {
     claims: Claims[]
-    status?: number
     index?: number
 }
