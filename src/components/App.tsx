@@ -1,5 +1,6 @@
 import Navbar from './Navbar'
 import Content from './Content'
+import Home from './Home'
 import LinkList from './LinkList'
 import Notes from './Notes'
 import NoMatch from './NoMatch'
@@ -15,13 +16,13 @@ const Body = () => {
   useEffect(() => setClaims(claimsData), [])
 
   return (
-    <main className="row j-space-b wth-85 ms-auto hgh-100">
-      <div className="col wth-30">
+    <main className="flex flex-row md:w-11/12 lg:w-10/12 sm:w-full  mx-auto h-full">
+      <div className="flex flex-col w-[30%]">
         <Navbar claims={claims} />
       </div>
-      <div className="col wth-100">
+      <div className="flex flex-col w-[100%] mt-10">
         <Routes>
-          <Route path="/" element={<Content claims={claims} />} />
+          <Route path="/" element={<Home />} />
           {claims.map((claim, index) => {
             return (
               <Route
@@ -34,7 +35,7 @@ const Body = () => {
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </div>
-      <div className="col gap-2 wth-30">
+      <div className="flex flex-col gap-8 w-[30%] mt-10">
         <LinkList />
         <Notes />
       </div>

@@ -1,4 +1,6 @@
-@import './resources/layout.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -8,14 +10,11 @@
 
   color-scheme: light dark;
   color: var(--white);
-  background-color: var(--dark);
 
   --white: #ffffffde;
-  --soft-white: #c9c9c9;
-  --dark: #0e0e0e;
-  --soft-dark: #1e1e1e;
-  --primary: #01427e;
-  --secondary: #0171da;
+  --dark: #1e1e1e;
+  --soft-dark: #2a2a2a;
+  --primary: #7c3aed;
 }
 
 * {
@@ -29,25 +28,20 @@ body {
   min-height: 100vh;
 }
 
-a {
-  text-decoration: none;
-  color: #ffffffde;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--soft-dark);
+  background: var(--dark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c142;
+  background: var(--soft-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  background: var(--primary);
 }
 
 #root {
@@ -56,17 +50,10 @@ a {
   flex-direction: column;
   min-width: 100%;
 }
-button {
-  background-color: transparent;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  text-align: start;
-  cursor: pointer;
-}
 
-.title {
-  font-size: 24px;
-  font-weight: bolder;
-  letter-spacing: 0.4px;
+.active {
+  --tw-text-opacity: 1;
+  color: rgb(124 58 237 / var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(124 58 237 / var(--tw-border-opacity));
 }

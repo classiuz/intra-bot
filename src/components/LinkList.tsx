@@ -1,8 +1,7 @@
-import './LinkList.css'
 import { useState, useEffect } from 'react'
 import linksData from '../data/links.json'
 import { Links } from '../resources/interfaces'
-import { FaLink, FaExternalLinkAlt } from 'react-icons/fa'
+import Icon from './Icon'
 
 const LinkList = () => {
   const [links, setLinks] = useState<Links[]>([])
@@ -10,12 +9,11 @@ const LinkList = () => {
   useEffect(() => setLinks(linksData), [])
 
   return (
-    <div className="link-list">
-      <div className="row gap title mb-1 mt-4">
-        <FaLink />
-        <span>LINKS ÚTILES</span>
+    <div className="links flex flex-col gap-4">
+      <div className="text-[24px] font-bold tracking-[0.4px]">
+        <Icon direction="left" text="LINKS ÚTILES" icon="Link" />
       </div>
-      <div className="col gap links">
+      <div className="flex flex-col gap-2 items-start">
         {links.map((link, index) => {
           return (
             <a
@@ -24,13 +22,14 @@ const LinkList = () => {
               target="_blank"
               onMouseEnter={() => setStatus(index)}
               onMouseLeave={() => setStatus(-1)}
+              className="hover:text-violet-600"
             >
-              {link.name}
-              <span
-                className={`icon ${status == index ? 'visible' : 'hidden'}`}
-              >
-                <FaExternalLinkAlt />
-              </span>
+              <Icon
+                direction="right"
+                text={link.name}
+                icon="ExternalLink"
+                className={`text-sm mb-1 ${status == index ? 'visible' : 'hidden'}`}
+              />
             </a>
           )
         })}

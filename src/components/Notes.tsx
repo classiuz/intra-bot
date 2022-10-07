@@ -1,32 +1,29 @@
-import './Notes.css'
 import { useState } from 'react'
-import { FaClipboardList, FaEraser, FaCopy } from 'react-icons/fa'
+import Icon from './Icon'
 
 const Notes = () => {
   const [notes, setNotes] = useState('')
 
   return (
-    <div className="notes">
-      <div className="row gap title mb-1">
-        <FaClipboardList />
-        <span>BLOC DE NOTAS</span>
+    <div className="notes flex flex-col gap-4">
+      <div className="text-[24px] font-bold tracking-[0.4px]">
+        <Icon direction="left" text="BLOC DE NOTAS" icon="Notes" />
       </div>
       <textarea
+        className="bg-[#1e1e1e] shadow-xl rounded-lg resize-none border-none cursor-auto p-4 text-sm w-full h-[30em] placeholder:italic placeholder:text-neutral-400"
         placeholder="Escribir una nota..."
         value={notes}
         onChange={(e) => setNotes(e.target.value)}
       />
-      <div className="row j-center a-center gap mt">
-        <button className="row a-center gap" onClick={() => setNotes('')}>
-          <FaEraser />
-          <span>Limpiar</span>
+      <div className="flex flex-row justify-center items-center gap-3">
+        <button className="rounded-md px-3 py-1 bg-violet-600 hover:bg-violet-800" onClick={() => setNotes('')}>
+          <Icon direction="left" text="Limpiar" icon="Clear" />
         </button>
         <button
-          className="row a-center gap"
+          className="rounded-md px-3 py-1 bg-violet-600 hover:bg-violet-800"
           onClick={() => navigator.clipboard.writeText(notes)}
         >
-          <FaCopy />
-          <span>Copiar</span>
+          <Icon direction="left" text="Copiar" icon="Copy" />
         </button>
       </div>
     </div>
