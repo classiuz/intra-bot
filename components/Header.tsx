@@ -1,21 +1,25 @@
 import Icon from './Icon'
 import { MdAssignmentTurnedIn } from 'react-icons/md'
+import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between items-center bg-gradient-to-r from-violet-800 to-purple-900 p-3 shadow-md">
+    <header className="flex flex-row justify-between items-center bg-gradient-to-r from-violet-800 to-purple-800 p-3 shadow-md">
       <div className="flex flex-row justify-end w-1/4">
-        <div className="flex flex-row place-items-center text-3xl text-white font-bold tracking-wide">
-          <span>INTRANET B</span>
-          <MdAssignmentTurnedIn />
-          <span>T</span>
-        </div>
+        <Link href="/">
+          <a className="flex flex-row place-items-center text-3xl text-white font-bold tracking-wide">
+            <span>INTRANET B</span>
+            <MdAssignmentTurnedIn />
+            <span>T</span>
+          </a>
+        </Link>
       </div>
       <div className="flex flex-row justify-start w-1/4">
         <a
           className="text-xl tracking-wide px-4 py-1 hover:cursor-pointer hover:text-white hover:bg-purple-700 hover:rounded-md hover:shadow-md"
           href="https://discord.com"
           target="_blank"
+          rel="noreferrer"
         >
           <Icon direction="left" text="Discord" icon="Discord" />
         </a>
@@ -23,6 +27,7 @@ const Header = () => {
           className="text-xl tracking-wide px-4 py-1 hover:cursor-pointer hover:text-white hover:bg-purple-700 hover:rounded-md hover:shadow-md"
           href="https://docs.google.com/forms/d/e/1FAIpQLSc_7mvUs8cNSjY-3mbO4hmBb1dGGBxdIeIcxEYzlemkkAa71g/viewform"
           target="_blank"
+          rel="noreferrer"
         >
           <Icon direction="left" text="Gestiones" icon="Forms" />
         </a>

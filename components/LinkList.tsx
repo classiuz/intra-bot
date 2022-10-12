@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react'
 import linksData from '../data/links.json'
-import { Links } from '../resources/interfaces'
 import Icon from './Icon'
+
+interface Links {
+  name: string
+  url: string
+}
 
 const LinkList = () => {
   const [links, setLinks] = useState<Links[]>([])
@@ -20,6 +24,7 @@ const LinkList = () => {
               key={index}
               href={link.url}
               target="_blank"
+              rel="noreferrer"
               onMouseEnter={() => setStatus(index)}
               onMouseLeave={() => setStatus(-1)}
               className="hover:text-violet-600"

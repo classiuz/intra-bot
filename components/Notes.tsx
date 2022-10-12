@@ -11,9 +11,9 @@ const Notes = () => {
       </div>
       <textarea
         className="bg-[#1e1e1e] shadow-xl rounded-lg resize-none border-none cursor-auto p-4 text-sm w-full h-[30em] placeholder:italic placeholder:text-neutral-400"
+        onChange={(e) => setNotes(e.target.value)}
         placeholder="Escribir una nota..."
         value={notes}
-        onChange={(e) => setNotes(e.target.value)}
       />
       <div className="flex flex-row justify-center items-center gap-3">
         <button className="rounded-md px-3 py-1 bg-violet-600 hover:bg-violet-800" onClick={() => setNotes('')}>
